@@ -14,19 +14,11 @@ node scripts/sample-script.js
 npx hardhat help
 ```
 
-## hardhat.config.js
-```js
-require('@nomiclabs/hardhat-waffle');
-
-module.exports = {
-  solidity: '0.8.0',
-  networks: {
-    rinkeby: {
-      url: 'YOUR ALCHEMY.IO APP KEY',
-      accounts: ['YOUR PRIVATE KEY'],
-    },
-  },
-};
+## .env file
+```shell
+STAGING_ALCHEMY_KEY=BLAHBLAH
+PROD_ALCHEMY_KEY=BLAHBLAH
+PRIVATE_KEY=BLAHBLAH
 ```
 
 ## Deploy contract
